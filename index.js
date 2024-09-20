@@ -37,8 +37,8 @@ function getCity(event) {
   ];
   
   let currentDay = daysOfWeek[now.getDay()];
-  
-  let currentMin = now.getMinutes();
+
+    let currentMin = now.getMinutes();
   if (currentMin < 10) {
     currentMin = `0${currentMin}`;
   }
@@ -50,7 +50,7 @@ function getCity(event) {
   
   let newDate = document.querySelector("#time");
   
-  newDate.innerHTML = `${currentHour}:${currentMin}`;
+  newDate.innerHTML = `${currentDay} ${currentHour}:${currentMin}`;
   
   let currentMonth = nameofMonth[now.getMonth()];
   let currentDate = now.getDate();
